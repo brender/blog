@@ -1,5 +1,7 @@
 <h1>List of Posts</h1>
 
+<%= link_to 'New Post', new_post_path %>
+
 <table>
   <tr>
     <th>Title</th>
@@ -8,7 +10,7 @@
 
   <% @posts.each do |post| %>
     <tr>
-      <td><%= post.title %></td>
+      <td><%= link_to post.title, post %></td>
       <td><%= post.text %></td>
     </tr>
   <% end %>
