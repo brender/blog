@@ -16,7 +16,6 @@
 <h2>Comments</h2>
 <%= render @post.comments %>
 
-<h2>Comment on Something in this Post</h2>
-<%= render "comments/form" %>
+<p><%= link_to 'Write a Comment', new_post_comment_path(@post) %></p>
 
-<%= link_to 'Back to List of Posts', posts_path %> | <%= link_to 'Edit Something on this Post', edit_post_path(@post) %>
+<p><%= link_to 'Back to List of Posts', posts_path %> | <%= link_to 'Edit Something on this Post', edit_post_path(@post) %></p>
