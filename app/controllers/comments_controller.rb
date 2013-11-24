@@ -1,4 +1,7 @@
 class CommentsController < ApplicationController
+
+    http_basic_authenticate_with name: "tokyo", password: "godzilla", only: :destroy
+
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(params[:comment].permit(:commenter,:body))
