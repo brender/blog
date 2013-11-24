@@ -14,17 +14,7 @@
 </p>
 
 <h2>Comments</h2>
-<% @post.comments.each do |comment| %>
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
-
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
-<% end %>
+<%= render @post.comments %>
 
 <h2>Comment on Something in this Post</h2>
 <%= form_for([@post, @post.comments.build]) do |f| %>
