@@ -1,11 +1,8 @@
-<p>
-  <%= comment.commenter %>
-</p>
+<div class="comment">
+  <h3><%= comment.commenter %></h3>
+  <p><%= comment.body %></p>
+</div>
 
-<p>
-  <%= comment.body %>
-</p>
-
-<p>
+<div class="admin">
   <%= link_to 'Destroy Comment', [comment.post, comment], method: :delete, data: { confirm: 'Are you sure you want to delete that? Like, really?' } %>
-</p>
+</div>

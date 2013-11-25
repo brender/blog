@@ -8,9 +8,14 @@
   <link rel="icon" type="image/png" href="<%= asset_path 'pinksquare.png' %>">
 </head>
 <body>
-  <h1><%= link_to 'Thanks Champagne', root_path %></h1>
+  <header class="blog_title">
+    <h1><%= link_to 'Thanks Champagne', root_path %></h1>
+  </header>
 
   <%= yield %>
 
+  <footer>
+    <p>Created by Brenda McIntosh</p>
+  </footer>
 </body>
 </html>

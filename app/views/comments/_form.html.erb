@@ -1,4 +1,5 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
+<div class="write_comment">
   <p>
     <%= f.text_field :commenter, :placeholder => "Your Name" %>
   </p>
@@ -8,4 +9,5 @@
   <p>
     <%= f.submit %>
   </p>
+</div>
 <% end %>

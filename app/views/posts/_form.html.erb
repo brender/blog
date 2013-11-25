@@ -2,7 +2,6 @@
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this from being saved:</h2>
-
       <ul>
       <% @post.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -11,15 +10,16 @@
     </div>
   <% end %>
 
-   <p>
-    <%= f.text_field :title, :placeholder => "Post Title" %>
-  </p>
-  <p>
-    <%= f.text_area :text, :placeholder => "Write Something" %>
-  </p>
-
-  <p>
-    <%= f.submit %><br>
-  </p>
+  <div class="write_post">
+    <p>
+      <%= f.text_field :title, :placeholder => "Post Title" %>
+    </p>
+    <p>
+      <%= f.text_area :text, :placeholder => "Write Something" %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  </div>
 
 <% end %>
