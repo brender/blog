@@ -3,18 +3,22 @@ Place all the styles related to the Posts controller here.
 They will automatically be included in application.css.
 */
 
+.error_explanation {
+
+}
+
+.write_post {
+
+}
+
 .post {
 
 }
 
-.post .date {
+.date {
 
 }
 
-.post .content {
+.content {
 
-}
-
-.post .admin {
-	
 }
