@@ -12,13 +12,24 @@ They will automatically be included in application.css.
 }
 
 .post {
-
+	width: 80%;
+	margin: 0 auto;
 }
 
 .date {
 
 }
 
-.content {
+.content h2 {
+	font-family: ;
+	font-size: ;
+	color: ;
+}
 
+.content p {
+	text-align: left;
+}
+
+.new_link {
+	text-align: center;
 }

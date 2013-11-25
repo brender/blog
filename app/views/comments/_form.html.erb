@@ -1,12 +1,12 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
 <div class="write_comment">
-  <p>
-    <%= f.text_field :commenter, :placeholder => "Your Name" %>
+  <p class="field">
+    <%= f.text_field :commenter, :placeholder => "Your Name", class: "text_input" %>
   </p>
-  <p>
-    <%= f.text_area :body, :placeholder => "Write Something" %>
+  <p class="field">
+    <%= f.text_area :body, :placeholder => "Write Something", class: "text_input" %>
   </p>
-  <p>
+  <p class="submit">
     <%= f.submit %>
   </p>
 </div>

@@ -11,11 +11,11 @@
   <% end %>
 
   <div class="write_post">
-    <p>
-      <%= f.text_field :title, :placeholder => "Post Title" %>
+    <p class="field">
+      <%= f.text_field :title, :placeholder => "Post Title", class: "text_input" %>
     </p>
-    <p>
-      <%= f.text_area :text, :placeholder => "Write Something" %>
+    <p class="field">
+      <%= f.text_area :text, :placeholder => "Write Something", class: "text_input" %>
     </p>
     <p>
       <%= f.submit %>

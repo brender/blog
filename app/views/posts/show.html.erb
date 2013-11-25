@@ -3,5 +3,5 @@
 <div class="comments">
   <h2>Comments</h2>
   <%= render @post.comments %>
-  <p><%= link_to 'Write a Comment', new_post_comment_path(@post) %></p>
+  <p class="write_comment_link"><%= link_to 'Write a Comment', new_post_comment_path(@post) %></p>
 </div>
