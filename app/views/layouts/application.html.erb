@@ -11,7 +11,7 @@
   <header>
     <h1><%= link_to 'Thanks Champagne', root_path %></h1>
   </header>
-  
+
   <% if notice %>
     <p class="alert alert-notice"><%= notice %></p>
   <% end %>
@@ -23,6 +23,15 @@
 
   <footer>
     <p>Created by Brenda McIntosh</p>
+
+    <p>
+    <% if user_signed_in? %>
+      <%= link_to 'Edit Profile', edit_user_registration_path %> |
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Login", new_user_session_path %>
+    <% end %>
+    </p>
   </footer>
 </body>
 </html>
