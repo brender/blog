@@ -14,42 +14,29 @@
  *= require comments
  */
 
- * {
- 	text-align: center;
- }
+* {
+	text-align: center;
+}
 
- p {
- 	font-family: 
- }
+a {
+	text-decoration: none;
+	color: #E9615C;
+}
 
- a {
- 	text-decoration: none;
- 	color: #E9615C;
- }
+a:hover {
+	text-decoration: none;
+	color: dimgray;
+}
 
- a:hover {
- 	text-decoration: none;
- 	color: dimgray;
- }
+header a {
+	color: black;
+}
 
- header, footer {
- 	font-family: ;
- 	font-size: ;
- }
+header a:hover {
+	color: dimgray;
+}
 
- header {
- 	background-image: ;
- }
-
- header a {
- 	color: black;
- }
-
- header a:hover {
- 	color: dimgray;
- }
-
- .field {
+.field {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
@@ -60,12 +47,8 @@
 	text-align: left;
 }
 
- .admin {
+.admin {
  	width: 100%;
  	margin: 0 auto;
  	text-align: left;
- }
-
- footer {
- 	font-size: ;
- }
+}
