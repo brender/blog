@@ -40,6 +40,10 @@ end
 
 gem 'devise'
 
+gem 'paperclip'
+
+gem 'aws-sdk'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
