@@ -15,6 +15,10 @@
       <%= f.text_field :title, :placeholder => "Post Title", class: "text_input" %>
     </p>
     <p class="field">
+      <%= f.label :thumbnail %><br />
+      <%= f.file_field :thumbnail %>
+    </p>
+    <p class="field">
       <%= f.text_area :text, :placeholder => "Write Something", class: "text_input" %>
     </p>
     <p>
