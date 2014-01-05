@@ -24,6 +24,10 @@ They will automatically be included in application.css.
 	text-align: left;
 }
 
+.content img {
+	width: 100%;
+}
+
 .new_link {
 	text-align: center;
 }
