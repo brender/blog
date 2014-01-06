@@ -42,7 +42,8 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.order(created_at: :desc)
+    posts = Post.order(created_at: :desc)
+    @newest_post, *@older_posts = posts
   end
 
   private

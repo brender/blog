@@ -1,0 +1,13 @@
+<div class="post">
+  <div class="date">
+    <%= older_post.created_at.strftime("%-m . %-d . %Y") %>
+  </div>
+  <div class="content">
+    <h2><%= link_to_unless_current older_post.title, older_post %></h2>
+    <p><%= image_tag older_post.thumbnail.url %></p>
+    <p><%= older_post.text.gsub(/\n/, '<br/>').html_safe %></p>
+  </div>
+  <div class="admin">
+    <%= link_to 'Edit', edit_post_path(older_post) %> | <%= link_to 'Destroy', post_path(older_post), method: :delete, data: { confirm: 'Are you sure you want to delete that? Like, really?'} %>
+  </div>
+</div>
