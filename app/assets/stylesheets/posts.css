@@ -41,3 +41,10 @@ They will automatically be included in application.css.
 	float: left;
 	border: none;
 }
+
+.old.snippet {
+	height: 200px;
+}
+
+.truncate {
+}
