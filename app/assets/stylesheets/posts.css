@@ -31,3 +31,13 @@ They will automatically be included in application.css.
 .new_link {
 	text-align: center;
 }
+
+.old.thumbnail img {
+	height: 200px;
+	width: 200px;
+}
+
+.old.thumbnail {
+	float: left;
+	border: none;
+}
