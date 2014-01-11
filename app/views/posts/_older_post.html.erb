@@ -4,7 +4,7 @@
   </div>
   <div class="content">
     <div class="old thumbnail">
-      <%= image_tag older_post.thumbnail.url(:thumb) %>
+      <%= image_tag older_post.thumbnail.url(:thumb), :alt => older_post.title %>
     </div>
     <div class="old snippet">
       <h2><%= link_to_unless_current older_post.title, older_post %></h2>
