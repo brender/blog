@@ -1,5 +1,5 @@
 <div class="admin new_link">
   <%= link_to 'New Post', new_post_path %>
 </div>
-<%= render @newest_post %>
+<%= render @newest_post if @newest_post %>
 <%= render partial: "older_post", collection: @older_posts %>
