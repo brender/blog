@@ -42,8 +42,14 @@ class PostsController < ApplicationController
   end
 
   def index
-    posts = Post.order(created_at: :desc)
-    @newest_post, *@older_posts = posts
+    page_num = params[:page]
+    @posts = Post.order(created_at: :desc).page(page_num)
+
+    if page_num.to_i > 1
+      @older_posts = @posts
+    else
+      @newest_post, *@older_posts = @posts
+    end
   end
 
   private

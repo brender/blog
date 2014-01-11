@@ -3,3 +3,4 @@
 </div>
 <%= render @newest_post if @newest_post %>
 <%= render partial: "older_post", collection: @older_posts %>
+<%= will_paginate @posts %>
