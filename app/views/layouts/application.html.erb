@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1><%= link_to 'Thanks Champagne', root_path %></h1>
+    <h1><%= link_to_unless_current 'Thanks Champagne', root_path %></h1>
   </header>
 
   <% if notice %>
