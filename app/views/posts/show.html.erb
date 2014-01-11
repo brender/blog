@@ -1,5 +1,9 @@
 <%= render @post %>
 
+<div class="admin">
+  <%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Destroy', post_path(@post), method: :delete, data: { confirm: 'Are you sure you want to delete that? Like, really?'} %>
+</div>
+
 <div class="comments">
   <h2>Comments</h2>
   <%= render @post.comments %>

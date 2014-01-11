@@ -11,7 +11,4 @@
       <p><%= truncate(older_post.text, length: 250, separator: ' ').gsub(/\n/, '<br/>').html_safe %></p>
     </div>
   </div>
-  <div class="admin">
-    <%= link_to 'Edit', edit_post_path(older_post) %> | <%= link_to 'Destroy', post_path(older_post), method: :delete, data: { confirm: 'Are you sure you want to delete that? Like, really?'} %>
-  </div>
 </div>

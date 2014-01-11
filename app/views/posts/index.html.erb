@@ -4,4 +4,3 @@
 <%= render @newest_post if @newest_post %>
 <%= render partial: "older_post", collection: @older_posts %>
 <%= will_paginate @posts, :previous_label => "&larr;", :next_label => "&rarr;", :page_links => false %>
-
