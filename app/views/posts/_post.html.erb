@@ -1,6 +1,6 @@
 <div class="post">
   <div class="date">
-    <%= post.created_at.strftime("%-m . %-d . %Y") %>
+    <span><%= post.created_at.strftime("%-m . %-d . %Y") %></span>
   </div>
   <div class="content">
     <h2><%= link_to_unless_current post.title, post %></h2>

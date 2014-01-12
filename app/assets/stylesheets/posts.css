@@ -17,7 +17,17 @@ They will automatically be included in application.css.
 }
 
 .date {
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid black;
+	border-bottom-style: double;
+	line-height: 0.1em;
+	margin: 10px 0 20px;
+}
 
+.date span {
+	background: white;
+	padding: 0 10px;
 }
 
 .content p {
