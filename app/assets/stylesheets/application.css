@@ -45,16 +45,12 @@ header a {
 	color: black;
 }
 
-header a:hover {
-	color: dimgray;
-}
-
 .blog_title {
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 6em;
 	line-height: 1.125em;
 	margin-top: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	letter-spacing: 2px;
 }
 
