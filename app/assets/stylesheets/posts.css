@@ -41,6 +41,14 @@ They will automatically be included in application.css.
 	font-family: 'Fjalla One', sans-serif;
 }
 
+.new .post_title {
+	font-size: 2.5em;
+}
+
+.old .post_title {
+	font-size: 2em;
+}
+
 .content img {
 	width: 100%;
 }

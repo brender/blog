@@ -2,7 +2,7 @@
   <div class="date">
     <span><%= post.created_at.strftime("%-m . %-d . %Y") %></span>
   </div>
-  <div class="content">
+  <div class="new content">
     <h2 class="post_title"><%= link_to_unless_current post.title, post %></h2>
     <p><%= image_tag post.thumbnail.url, :alt => post.title %></p>
     <p><%= post.text.gsub(/\n/, '<br/>').html_safe %></p>
