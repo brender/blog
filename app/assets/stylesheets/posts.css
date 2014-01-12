@@ -18,6 +18,8 @@ They will automatically be included in application.css.
 
 .date {
 	width: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.125em;
 	text-align: center;
 	border-bottom: 3px solid black;
 	line-height: 0.1em;
