@@ -54,6 +54,7 @@ header a:hover {
 	line-height: 1.125em;
 	margin-top: 25px;
 	margin-bottom: 20px;
+	letter-spacing: 2px;
 }
 
 .blog_title span {
