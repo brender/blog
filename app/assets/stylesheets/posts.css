@@ -20,7 +20,6 @@ They will automatically be included in application.css.
 	width: 100%;
 	text-align: center;
 	border-bottom: 3px solid black;
-	border-bottom-style: double;
 	line-height: 0.1em;
 	margin: 15px 0 15px;
 }

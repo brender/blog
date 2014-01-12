@@ -28,12 +28,12 @@ body {
 
 a {
 	text-decoration: none;
-	color: #E9615C;
+	color: rgb(195,146,67);
 }
 
 a:hover {
 	text-decoration: none;
-	color: dimgray;
+	color: black;
 }
 
 header {
