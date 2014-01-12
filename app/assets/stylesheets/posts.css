@@ -25,7 +25,7 @@ They will automatically be included in application.css.
 }
 
 .date span {
-	background: white;
+	background: rgb(250,239,237);
 	padding: 0 10px;
 }
 
