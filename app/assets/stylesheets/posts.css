@@ -22,7 +22,7 @@ They will automatically be included in application.css.
 	border-bottom: 3px solid black;
 	border-bottom-style: double;
 	line-height: 0.1em;
-	margin: 10px 0 20px;
+	margin: 15px 0 15px;
 }
 
 .date span {
