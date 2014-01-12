@@ -40,6 +40,7 @@ They will automatically be included in application.css.
 .old.thumbnail {
 	float: left;
 	border: none;
+	padding-right: 15px;
 }
 
 .old.snippet {
