@@ -14,10 +14,6 @@
  *= require comments
  */
 
-* {
-	text-align: center;
-}
-
 body {
 	margin-left: 20%;
 	margin-right: 20%;
@@ -31,6 +27,10 @@ a {
 a:hover {
 	text-decoration: none;
 	color: dimgray;
+}
+
+header {
+	text-align: center;
 }
 
 header a {
@@ -49,11 +49,13 @@ header a:hover {
 
 .text_input {
 	width: 100%;
-	text-align: left;
 }
 
 .admin {
  	width: 100%;
  	margin: 0 auto;
- 	text-align: left;
+}
+
+footer {
+	text-align: center;
 }

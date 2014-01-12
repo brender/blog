@@ -13,6 +13,7 @@ They will automatically be included in application.css.
 
 .post {
 	margin: 0 auto;
+	text-align: center;
 }
 
 .date {
@@ -43,6 +44,7 @@ They will automatically be included in application.css.
 
 .old.snippet {
 	height: 200px;
+	text-align: left;
 }
 
 .pagination {
