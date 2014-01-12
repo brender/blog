@@ -43,11 +43,12 @@ They will automatically be included in application.css.
 }
 
 .old.thumbnail img {
-	height: 200px;
+	height: 100%;
 	width: 200px;
 }
 
 .old.thumbnail {
+	height: 200px;
 	float: left;
 	border: none;
 	padding-right: 15px;
@@ -60,4 +61,5 @@ They will automatically be included in application.css.
 
 .pagination {
 	font-size: 5em;
+	text-align: center;
 }
