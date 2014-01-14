@@ -13,18 +13,23 @@
  *= require comments
  */
 
-@import url(http://fonts.googleapis.com/css?family=Lato|Fjalla+One|Dancing+Script:700);
+@import url(http://fonts.googleapis.com/css?family=Sanchez|Montserrat);
+
+@font-face {
+	font-family: 'HaloHandletter';
+	src: url(../fonts/HaloHandletter.otf);
+}
 
 /*
-font-family: 'Lato', sans-serif;
-font-family: 'Fjalla One', sans-serif;
-font-family: 'Dancing Script', cursive;
+font-family: 'Sanchez', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'HaloHandletter', serif;
 */
 
 body {
 	margin-left: 20%;
 	margin-right: 20%;
-	background-color: rgb(250, 239, 237);	
+	background-color: white;	
 }
 
 a {
@@ -46,18 +51,20 @@ header a {
 }
 
 .blog_title {
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 6em;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4em;
 	line-height: 1.125em;
 	margin-top: 25px;
 	margin-bottom: 30px;
-	letter-spacing: 2px;
+	text-align: left;
+	padding-left: 15px;
+	border-left: 8px solid rgb(248,217,201);
 }
 
 .blog_title span {
-	font-family: 'Dancing Script', cursive;
-	font-size: 1.25em;
-	text-shadow: 3px 3px rgb(195,146,67);
+	font-family: 'HaloHandletter', cursive;
+	font-size: 1.75em;
+	font-weight: 500;
 }
 
 .field {
@@ -72,7 +79,7 @@ header a {
 
 .admin {
  	width: 100%;
- 	font-family: 'Lato', sans-serif;
+ 	font-family: 'Sanchez', sans-serif;
 	font-size: 1.125em;
  	margin: 0 auto;
 }
