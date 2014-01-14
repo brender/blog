@@ -18,10 +18,10 @@ They will automatically be included in application.css.
 
 .date {
 	width: 100%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Sanchez', serif;
 	font-size: 1.125em;
 	text-align: center;
-	border-bottom: 3px solid black;
+	border-bottom: 8px solid rgb(248,217,201);
 	line-height: 0.1em;
 	margin: 15px 0 15px;
 }
@@ -33,13 +33,13 @@ They will automatically be included in application.css.
 
 .content p {
 	text-align: left;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Sanchez', serif;
 	font-size: 1.125em;
 	line-height: 1.5em;
 }
 
 .post_title {
-	font-family: 'Fjalla One', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .new .post_title {
@@ -76,7 +76,7 @@ They will automatically be included in application.css.
 }
 
 .pagination {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Sanchez', sans-serif;
 	font-size: 5em;
 	text-align: center;
 }

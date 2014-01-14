@@ -34,12 +34,12 @@ body {
 
 a {
 	text-decoration: none;
-	color: rgb(195,146,67);
+	color: black;
 }
 
 a:hover {
 	text-decoration: none;
-	color: black;
+	color: rgb(248,217,201);
 }
 
 header {
