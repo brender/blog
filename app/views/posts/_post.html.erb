@@ -4,7 +4,7 @@
   </div>
   <div class="new content">
     <h2 class="post_title"><%= link_to_unless_current post.title, post %></h2>
-    <p><%= image_tag post.thumbnail.url, :alt => post.title %></p>
+    <p><%= link_to_unless_current image_tag(post.thumbnail.url, :alt => post.title), post %></p>
     <p><%= post.text.gsub(/\n/, '<br/>').html_safe %></p>
   </div>
 </div>
