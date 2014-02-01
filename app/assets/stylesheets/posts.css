@@ -80,3 +80,7 @@ They will automatically be included in application.css.
 	font-size: 5em;
 	text-align: center;
 }
+
+.next_page.disabled, .previous_page.disabled {
+	display: none;
+}
