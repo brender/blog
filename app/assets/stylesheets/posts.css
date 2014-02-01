@@ -67,12 +67,12 @@ They will automatically be included in application.css.
 	height: 200px;
 	float: left;
 	border: none;
-	padding-right: 15px;
 }
 
 .old.snippet {
-	height: 200px;
+	min-height: 200px;
 	text-align: left;
+	margin-left: 215px;
 }
 
 .pagination {
