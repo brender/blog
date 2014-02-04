@@ -86,12 +86,10 @@ body {
 	padding-top: 10px;
 }
 
-.social_links .about_link {
-}
-
 .social_links a {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.5em;
+	color: rgb(38,38,38);
 }
 
 .social_links li {
@@ -100,16 +98,16 @@ body {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: rgb(38,38,38);
 }
 
 a:hover {
 	text-decoration: none;
-	color: rgb(248,217,201);
+	color: rgba(38,38,38,0.6);
 }
 
 .social_links a:hover {
-	color: black;
+	color: rgb(38,38,38);
 }
 
 .social_links span:hover {
@@ -126,17 +124,11 @@ header a {
 
 .blog_title {
 	font-family: 'Raleway', sans-serif;
+	color: rgb(38,38,38);
 	font-weight: 300;
 	font-size: 4em;
 	text-align: center;
-	margin: 15px 60px;
-	padding-top: 10px;
-}
-
-.blog_title span {
-	font-family: 'League Script', cursive;
-	font-size: 1.25em;
-	font-weight: 500;
+	margin-top: 5px;
 }
 
 .field {

@@ -9,7 +9,8 @@
 </head>
 <body>
   <header>
-    <h1 class="blog_title"><%= link_to_unless_current '<span>all</span> THE THINGS'.html_safe, root_path %></h1>
+    <img src="<%= asset_path 'all.png' %>">
+    <h1 class="blog_title"><%= link_to_unless_current 'THE THINGS'.html_safe, root_path %></h1>
   </header>
 
   <% if notice %>
