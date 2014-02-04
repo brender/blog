@@ -3,6 +3,8 @@
   <p><%= comment.body %></p>
 </div>
 
-<div class="admin">
-  <%= link_to 'Destroy Comment', [comment.post, comment], method: :delete, data: { confirm: 'Are you sure you want to delete that? Like, really?' } %>
-</div>
+<% if user_signed_in? %>
+  <div class="admin">
+    <%= link_to 'Destroy Comment', [comment.post, comment], method: :delete, data: { confirm: 'Are you sure you want to delete that? Like, really?' } %>
+  </div>
+<% end %>
