@@ -36,6 +36,7 @@ body {
 	display: inline-block;
 	float: right;
 	text-align: center;
+	position: relative;
 }
 
 .sidebar_image {
@@ -44,16 +45,25 @@ body {
 	margin: 10px;
 }
 
+.sidebar_arrow {
+	position: absolute;
+	right: 20px;
+	top: 185px;
+}
+
 .about {
-	margin-top: -35px;
+	margin-top: 10px;
 	font-family: 'League Script', cursive;
 	font-size: 2.6em;
+	text-align: left;
+	line-height: 0.75em;
+	margin-left: 40px;
 }
 
 .social_links {
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-top: -45px;
+	margin-top: -30px;
 	list-style-type: none;
 	padding: 0;
 }
@@ -64,6 +74,9 @@ body {
 	background-color: rgb(248,217,201);
 	display: block;
 	padding-top: 10px;
+}
+
+.social_links .about_link {
 }
 
 .social_links a {
