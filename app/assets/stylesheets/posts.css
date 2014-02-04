@@ -12,7 +12,7 @@ They will automatically be included in application.css.
 }
 
 .post {
-	margin: 0 auto;
+	margin: 0 10px;
 	text-align: center;
 }
 

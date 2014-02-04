@@ -19,7 +19,13 @@
     <p class="alert alert-error"><%= alert %></p>
   <% end %>
 
-  <%= yield %>
+  <div class="body">
+    <div class="main">
+      <%= yield %>
+    </div>
+    <div class="sidebar">
+    </div>
+  </div>
 
   <footer>
     <p>Created by Brenda McIntosh</p>

@@ -27,10 +27,29 @@ font-family: 'HaloHandletter', serif;
 */
 
 body {
-	margin-left: 20%;
-	margin-right: 20%;
 	background-color: white;	
 }
+
+.body {
+	margin: 0 auto;
+	width: 1038px;
+}
+
+.main {
+	width: 768px;
+	display: inline-block;
+}
+
+.sidebar {
+	width: 250px;
+	height: 600px;
+	margin-right: 10px;
+	background-color: aqua;
+	display: inline-block;
+	float: right;
+}
+
+
 
 a {
 	text-decoration: none;
