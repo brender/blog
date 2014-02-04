@@ -119,10 +119,6 @@ header {
 	width: 768px;
 }
 
-header a {
-	color: black;
-}
-
 .blog_title {
 	font-family: 'Raleway', sans-serif;
 	color: rgb(38,38,38);
@@ -130,6 +126,10 @@ header a {
 	font-size: 4em;
 	text-align: center;
 	margin-top: 5px;
+}
+
+.blog_title a:hover {
+	color: rgb(38,38,38);
 }
 
 .field {
