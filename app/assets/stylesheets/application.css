@@ -31,7 +31,6 @@ body {
 
 .sidebar {
 	width: 250px;
-	height: 600px;
 	margin-right: 10px;
 	border: 2px solid black;
 	display: inline-block;
@@ -52,7 +51,9 @@ body {
 }
 
 .social_links {
-	margin: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: -30px;
 	list-style-type: none;
 	padding: 0;
 }
@@ -62,6 +63,10 @@ body {
 	height: 50px;
 	background-color: rgb(248,217,201);
 	display: block;
+}
+
+.social_links li {
+	margin-bottom: 10px;
 }
 
 a {
