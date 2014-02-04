@@ -8,19 +8,19 @@
   <link rel="icon" type="image/png" href="<%= asset_path 'pinksquare.png' %>">
 </head>
 <body>
-  <header>
-    <img src="<%= asset_path 'all.png' %>">
-    <h1 class="blog_title"><%= link_to_unless_current 'THE THINGS'.html_safe, root_path %></h1>
-  </header>
-
-  <% if notice %>
-    <p class="alert alert-notice"><%= notice %></p>
-  <% end %>
-  <% if alert %>
-    <p class="alert alert-error"><%= alert %></p>
-  <% end %>
-
   <div class="body">
+    <header>
+      <img src="<%= asset_path 'all.png' %>">
+      <h1 class="blog_title"><%= link_to_unless_current 'THE THINGS'.html_safe, root_path %></h1>
+    </header>
+
+    <% if notice %>
+      <p class="alert alert-notice"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-error"><%= alert %></p>
+    <% end %>
+
     <div class="main">
       <%= yield %>
     </div>
