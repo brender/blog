@@ -13,18 +13,7 @@
  *= require comments
  */
 
-@import url(http://fonts.googleapis.com/css?family=Sanchez|Montserrat);
-
-@font-face {
-	font-family: 'HaloHandletter';
-	src: url(../fonts/HaloHandletter.otf);
-}
-
-/*
-font-family: 'Sanchez', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'HaloHandletter', serif;
-*/
+@import url(http://fonts.googleapis.com/css?family=Sanchez|League+Script|Raleway:300);
 
 body {
 	background-color: white;	
@@ -44,15 +33,22 @@ body {
 	width: 250px;
 	height: 600px;
 	margin-right: 10px;
-	background-color: aqua;
+	border: 2px solid black;
 	display: inline-block;
 	float: right;
+	text-align: center;
 }
 
 .sidebar_image {
 	width: 230px;
 	height: auto;
 	margin: 10px;
+}
+
+.about {
+	margin-top: -30px;
+	font-family: 'League Script', cursive;
+	font-size: 2.6em;
 }
 
 a {
@@ -74,7 +70,8 @@ header a {
 }
 
 .blog_title {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
 	font-size: 4em;
 	line-height: 1.125em;
 	margin-top: 25px;
@@ -85,7 +82,7 @@ header a {
 }
 
 .blog_title span {
-	font-family: 'HaloHandletter', cursive;
+	font-family: 'League Script', cursive;
 	font-size: 1.75em;
 	font-weight: 500;
 }
