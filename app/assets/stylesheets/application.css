@@ -49,7 +49,11 @@ body {
 	float: right;
 }
 
-
+.sidebar_image {
+	width: 230px;
+	height: auto;
+	margin: 10px;
+}
 
 a {
 	text-decoration: none;
