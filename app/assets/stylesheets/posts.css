@@ -79,9 +79,12 @@ They will automatically be included in application.css.
 }
 
 .pagination {
-	font-family: 'Sanchez', sans-serif;
-	font-size: 5em;
+	font-family: 'Raleway', sans-serif;
+	color: rgb(38,38,38);
+	text-transform: uppercase;
+	font-size: 1.5em;
 	text-align: center;
+	margin-top: 30px;
 }
 
 .next_page.disabled, .previous_page.disabled {
