@@ -116,6 +116,7 @@ a:hover {
 header {
 	text-align: center;
 	width: 768px;
+	margin-top: 20px;
 }
 
 .blog_title {
@@ -125,6 +126,7 @@ header {
 	font-size: 4em;
 	text-align: center;
 	margin-top: 5px;
+	margin-bottom: 30px;
 }
 
 .blog_title a:hover {
