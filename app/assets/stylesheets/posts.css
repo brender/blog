@@ -11,14 +11,14 @@ They will automatically be included in application.css.
 
 }
 
+.post:first-child {
+	border-top: 2px solid rgb(38,38,38);
+}
+
 .post {
 	border-bottom: 2px solid rgb(38,38,38);
 	margin: 0 10px;
 	text-align: center;
-}
-
-.post.new {
-	border-top: 2px solid rgb(38,38,38);
 }
 
 .date {
