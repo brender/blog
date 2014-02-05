@@ -32,8 +32,7 @@ body {
 .sidebar {
 	width: 250px;
 	margin-right: 10px;
-	margin-top: 15px;
-	border: 2px solid rgb(100,100,100);
+	border: 2px solid rgb(38,38,38);
 	display: inline-block;
 	float: right;
 	text-align: center;
