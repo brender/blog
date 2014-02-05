@@ -126,6 +126,7 @@ header {
 	font-size: 4em;
 	text-align: center;
 	margin-bottom: 30px;
+	margin-top: 0;
 }
 
 .blog_title a:hover {
