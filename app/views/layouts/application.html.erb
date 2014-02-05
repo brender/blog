@@ -10,8 +10,10 @@
 <body>
   <div class="body">
     <header>
-      <img src="<%= asset_path 'all.png' %>">
-      <h1 class="blog_title"><%= link_to_unless_current 'THE THINGS'.html_safe, root_path %></h1>
+      <%= link_to(root_path) do %>
+        <img src="<%= asset_path 'all.png' %>">
+        <h1 class="blog_title">THE THINGS</h1>
+      <% end %>
     </header>
 
     <% if notice %>
