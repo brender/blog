@@ -102,7 +102,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: rgba(38,38,38,0.6);
+	color: rgb(100,100,100);
 }
 
 .social_links a:hover {

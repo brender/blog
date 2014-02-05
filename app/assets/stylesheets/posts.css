@@ -24,6 +24,7 @@ They will automatically be included in application.css.
 .date {
 	font-family: 'Raleway', serif;
 	font-size: 1.125em;
+	color: rgb(100,100,100);
 }
 
 .content p {
