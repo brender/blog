@@ -42,6 +42,7 @@ They will automatically be included in application.css.
 
 .new .post_title {
 	font-size: 2.5em;
+	margin-top: 15px;
 }
 
 .old .post_title {
