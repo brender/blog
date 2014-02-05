@@ -5,7 +5,7 @@
     </div>
     <div class="old snippet">
       <h2 class="post_title"><%= link_to_unless_current older_post.title, older_post %></h2>
-      <div class="date"><%= older_post.created_at.strftime("%-m . %-d . %Y") %></div>
+      <div class="date"><%= older_post.created_at.strftime("%A, %B %-d, %Y") %></div>
       <p><%= truncate(older_post.text, length: 250, separator: ' ').gsub(/\n/, '<br/>').html_safe %></p>
     </div>
   </div>
