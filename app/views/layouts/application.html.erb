@@ -28,7 +28,7 @@
       <footer>
         <p class="byme">Designed and developed by <a href="http://brendamcintosh.com">Brenda McIntosh</a></p>
 
-        <p>
+        <p class="admin">
         <% if user_signed_in? %>
           <%= link_to "Logout", destroy_user_session_path, method: :delete %>
         <% end %>

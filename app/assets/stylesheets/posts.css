@@ -54,8 +54,8 @@ They will automatically be included in application.css.
 	width: 100%;
 }
 
-.new_link {
-	text-align: center;
+.admin.new_link {
+	padding-top: 15px;
 }
 
 .old.thumbnail img {
