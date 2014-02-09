@@ -4,12 +4,7 @@ They will automatically be included in application.css.
 */
 
 .comments {
-	width: 70%;
-	margin: 0 auto;
-}
-
-.write_comment_link {
-	font-size: 1.5em;
+	margin: 0 10px;
 }
 
 .nav_to_post {
