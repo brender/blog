@@ -31,13 +31,31 @@ They will automatically be included in application.css.
 }
 
 .comment_body {
-	font-family: 'Sanchez', serif;
+	font-family: 'Raleway', serif;
 	color: rgb(38,38,38);
 	margin: 0;
 }
 
 .write_comment {
 
+}
+
+.text_input {
+	border: 1px solid rgb(248,217,201);
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+}
+
+input.text_input {
+	width: 300px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+textarea.text_input {
+	width: 500px;
+	height: 100px;
 }
 
 .submit {
