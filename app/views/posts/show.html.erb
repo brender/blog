@@ -9,7 +9,8 @@
 <div class="comments">
   <h2>Comments</h2>
   <%= render @post.comments %>
-  <p class="write_comment_link"><%= link_to 'Write a Comment', new_post_comment_path(@post) %></p>
+  <h2>Write a Comment</h2>
+  <%= render 'comments/form' %>
 </div>
 
 <script type="text/javascript" async data-pin-shape="round" data-pin-height="32" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
