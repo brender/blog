@@ -11,10 +11,29 @@ They will automatically be included in application.css.
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.75em;
 	font-weight: 300;
+	margin-bottom: 0;
 }
 
-.nav_to_post {
+.comment {
+	margin-top: 15px;
+}
 
+.comment + .comment {
+	padding-top: 15px;
+	border-top: 1px solid rgb(248,217,201);
+}
+
+.commenter {
+	font-family: 'Raleway', serif;
+	color: rgb(100,100,100);
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+.comment_body {
+	font-family: 'Sanchez', serif;
+	color: rgb(38,38,38);
+	margin: 0;
 }
 
 .write_comment {
@@ -25,7 +44,4 @@ They will automatically be included in application.css.
 
 }
 
-.comment {
-
-}
 
