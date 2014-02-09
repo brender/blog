@@ -146,4 +146,12 @@ header {
 
 footer {
 	text-align: center;
+	margin-top: 30px;
+}
+
+.byme {
+	font-family: 'Raleway', sans-serif;
+	color: rgb(100,100,100);
+	font-size: 0.75em;
+	text-transform: uppercase;
 }

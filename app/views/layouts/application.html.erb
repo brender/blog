@@ -25,6 +25,17 @@
 
     <div class="main">
       <%= yield %>
+      <footer>
+        <p class="byme">Designed and developed by <a href="http://brendamcintosh.com">Brenda McIntosh</a></p>
+
+        <p>
+        <% if user_signed_in? %>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Login", new_user_session_path %>
+        <% end %>
+        </p>
+      </footer>
     </div>
     <div class="sidebar">
       <a href="http://brendamcintosh.com" class="about_link">
@@ -45,17 +56,5 @@
       </ul>
     </div>
   </div>
-
-  <footer>
-    <p>Created by Brenda McIntosh</p>
-
-    <p>
-    <% if user_signed_in? %>
-      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Login", new_user_session_path %>
-    <% end %>
-    </p>
-  </footer>
 </body>
 </html>
