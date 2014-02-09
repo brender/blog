@@ -2,10 +2,6 @@ class CommentsController < ApplicationController
 
   before_filter :authenticate_user!, :only => :destroy
 
-  def new
-    @post = Post.find(params[:post_id])
-  end
-
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(params[:comment].permit(:commenter,:body))
