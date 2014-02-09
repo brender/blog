@@ -52,6 +52,7 @@ input.text_input {
 	width: 300px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	margin-top: 10px;
 }
 
 textarea.text_input {
