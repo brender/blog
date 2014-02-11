@@ -72,7 +72,9 @@ button.addEventListener('click', function() {
     }
 
     var url = 'https://s3.amazonaws.com/brendamcintoshblog/' + key;
-    results.innerHTML += '<div class="img-upload"><div class="img-preview"><img src="' + url + '" /></div><div class="img-url">' + url + '</div></div>';
+    var sampleTag = '&lt;img src=&quot;' + url + '&quot; /&gt;';
+
+    results.innerHTML += '<div class="img-upload"><div class="img-preview"><img src="' + url + '" /></div><div class="img-url">' + sampleTag + '</div></div>';
   });
 }, false);
 </script>

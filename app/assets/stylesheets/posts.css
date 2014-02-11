@@ -91,3 +91,8 @@ They will automatically be included in application.css.
 .next_page.disabled, .previous_page.disabled {
 	display: none;
 }
+
+.img-preview img {
+	width: 200px;
+	height: auto;
+}
