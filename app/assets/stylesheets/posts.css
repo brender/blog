@@ -3,12 +3,17 @@ Place all the styles related to the Posts controller here.
 They will automatically be included in application.css.
 */
 
-.error_explanation {
-
+.write_post, .error_explanation {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
-.write_post {
-
+.error_explanations {
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.85em;
+	font-weight: normal;
 }
 
 .post:first-child {
