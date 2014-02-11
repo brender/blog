@@ -141,11 +141,16 @@ header {
 	width: 100%;
 }
 
-.admin {
+.admin, .alert {
  	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
  	text-align: center;
  	text-transform: uppercase;
+}
+
+.alert {
+	text-align: left;
+	padding-left: 10px;
 }
 
 footer {
