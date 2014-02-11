@@ -27,6 +27,7 @@
       <%= yield %>
       <footer>
         <p class="byme">Designed and developed by <a href="http://brendamcintosh.com">Brenda McIntosh</a></p>
+        <a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge"><img alt="VigLink badge" height="31" src="//www.viglink.com/images/badges/88x31.png" title="Links monetized by VigLink" width="88" /></a>
 
         <p class="admin">
         <% if user_signed_in? %>
@@ -54,5 +55,16 @@
       </ul>
     </div>
   </div>
+  <script type="text/javascript">
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: 'dbf41405146d9f44c1c24b4b2b09534b' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+  </script>
 </body>
 </html>
