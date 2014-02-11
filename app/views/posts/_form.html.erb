@@ -1,3 +1,5 @@
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.0.0-rc9.min.js"></script>
+
 <%= form_for @post do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -19,11 +21,63 @@
       <%= f.file_field :thumbnail %>
     </p>
     <p class="field">
+      <input type="file" id="img-chooser" />
+      <button type="button" id="img-chooser-button">Upload Images</button>
+      <div id="img-results"></div>
+    </p>
+    <p class="field">
       <%= f.text_area :text, :placeholder => "Write Something", class: "text_input" %>
     </p>
     <p>
       <%= f.submit %>
     </p>
   </div>
-
 <% end %>
+
+<script type="text/javascript">
+AWS.config.update({
+  accessKeyId: 'AKIAIAR2MAGU2FJGAXGQ',
+  secretAccessKey: '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',
+  region: 'us-east-1'
+});
+
+var bucket = new AWS.S3({
+  params: { Bucket: 'brendamcintoshblog' }
+})
+
+var fileChooser = document.getElementById('img-chooser');
+var button = document.getElementById('img-chooser-button');
+console.log(button);
+
+var results = document.getElementById('img-results');
+
+button.addEventListener('click', function() {
+  var file = fileChooser.files[0];
+  console.log('Clicked with file ' + file);
+  if (!file) return;
+
+  results.innerText = '';
+  var params = {
+    Key: file.name,
+    ContentType: file.type,
+    Body: file,
+    ACL: 'public-read'
+  };
+
+  bucket.putObject(params, function (err, data) {
+    console.log('Upload result: ' + data + ' (error: ' + err + ')');
+    if (err) {
+      alert('Failed to upload to S3: ' + err);
+      return;
+    }
+
+    var url = bucket.getSignedUrl('getObject', {
+      Bucket: 'brendamcintoshblog',
+      Key: file.name
+    });
+
+    console.log('Signed URL:' + url);
+    results.innerText = url;
+  });
+}, false);
+</script>
