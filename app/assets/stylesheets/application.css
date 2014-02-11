@@ -45,6 +45,10 @@ body {
 	margin: 10px;
 }
 
+.about_link {
+	color: black;
+}
+
 .about_link:hover {
 	color: black;
 }
@@ -97,7 +101,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: rgb(38,38,38);
+	color: rgb(217,131,112);
 }
 
 a:hover {
