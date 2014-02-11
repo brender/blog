@@ -111,3 +111,8 @@ They will automatically be included in application.css.
 	width: 200px;
 	height: auto;
 }
+
+.img-url {
+	font-size: 0.85em;
+	text-transform: none;
+}
