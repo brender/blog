@@ -21,12 +21,12 @@
       <%= f.file_field :thumbnail %>
     </p>
     <p class="field">
-      <input type="file" id="img-chooser" />
-      <button type="button" id="img-chooser-button">Upload Images</button>
-      <div id="img-results"></div>
+      <%= f.text_area :text, :placeholder => "Write Something", class: "text_input" %>
     </p>
     <p class="field">
-      <%= f.text_area :text, :placeholder => "Write Something", class: "text_input" %>
+      <input type="file" id="img-chooser" />
+      <button type="button" id="img-chooser-button">Upload Image</button>
+      <div id="img-results"></div>
     </p>
     <p>
       <%= f.submit %>
@@ -56,9 +56,9 @@ button.addEventListener('click', function() {
   console.log('Clicked with file ' + file);
   if (!file) return;
 
-  results.innerText = '';
+  var key = file.name;
   var params = {
-    Key: file.name,
+    Key: key,
     ContentType: file.type,
     Body: file,
     ACL: 'public-read'
@@ -71,13 +71,8 @@ button.addEventListener('click', function() {
       return;
     }
 
-    var url = bucket.getSignedUrl('getObject', {
-      Bucket: 'brendamcintoshblog',
-      Key: file.name
-    });
-
-    console.log('Signed URL:' + url);
-    results.innerText = url;
+    var url = 'https://s3.amazonaws.com/brendamcintoshblog/' + key;
+    results.innerHTML += '<div class="img-upload"><div class="img-preview"><img src="' + url + '" /></div><div class="img-url">' + url + '</div></div>';
   });
 }, false);
 </script>
