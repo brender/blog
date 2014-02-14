@@ -22,5 +22,8 @@ module Blog
 
     config.assets.initialize_on_precompile = false
 
+    config.action_dispatch.default_headers = {
+        'X-Frame-Options' => 'ALLOWALL'
+    }
   end
 end
