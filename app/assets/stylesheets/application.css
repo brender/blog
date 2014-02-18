@@ -30,6 +30,12 @@ body {
 	display: inline-block;
 }
 
+.about_page_image {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
 .sidebar {
 	width: 250px;
 	margin-right: 10px;
