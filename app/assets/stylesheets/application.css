@@ -11,6 +11,7 @@
  *= require_self
  *= require posts
  *= require comments
+ *= require pages
  */
 
 @import url(http://fonts.googleapis.com/css?family=Sanchez|League+Script|Raleway:300);
