@@ -1,6 +1,6 @@
 Blog::Application.routes.draw do
+  get "about" => 'pages#about'
 
-  get "pages/about"
   devise_for :users
   resources :posts do
     resources :comments
