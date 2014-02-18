@@ -138,7 +138,23 @@ header {
 }
 
 .text_input {
-	width: 100%;
+	border: 1px solid rgb(248,217,201);
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+input.text_input {
+	width: 300px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+
+textarea.text_input {
+	width: 500px;
+	height: 500px;
 }
 
 .admin, .alert {
