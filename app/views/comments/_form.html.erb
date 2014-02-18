@@ -1,13 +1,24 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
-<div class="write_comment">
-  <div class="field">
-    <%= f.text_field :commenter, :placeholder => "Name", class: "text_input" %>
+  <% if @comment && @comment.errors.any? %>
+    <div>
+      <h2 class="error_explanation"><%= pluralize(@comment.errors.count, "error") %> prohibited this from being saved:</h2>
+      <ul>
+      <% @comment.errors.full_messages.each do |msg| %>
+        <li class="error_explanations"><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="write_comment">
+    <div class="field">
+      <%= f.text_field :commenter, :placeholder => "Name", class: "text_input" %>
+    </div>
+    <div class="field">
+      <%= f.text_area :body, :placeholder => "Comment", class: "text_input" %>
+    </div>
+    <div>
+      <%= f.submit class: "submit" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.text_area :body, :placeholder => "Comment", class: "text_input" %>
-  </div>
-  <div>
-    <%= f.submit class: "submit" %>
-  </div>
-</div>
 <% end %>
