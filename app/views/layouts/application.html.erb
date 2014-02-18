@@ -37,11 +37,11 @@
       </footer>
     </div>
     <div class="sidebar">
-      <a href="http://brendamcintosh.com" class="about_link">
+      <%= link_to(about_path) do %>
         <img src="<%= asset_path 'brenda2.JPG' %>" class="sidebar_image" nopin="nopin">
         <span class="about">about<br>me!</span>
         <img src="<%= asset_path 'arrowforblog.png' %>" class="sidebar_arrow">
-      </a>
+      <% end %>
       <ul class="social_links">
         <li>
           <a href="https://github.com/brender" target="_blank"><span>GITHUB</span></a>
