@@ -8,6 +8,7 @@ They will automatically be included in application.css.
 	font-size: 1em;
 	font-weight: normal;
 	line-height: 1.5em;
+	margin-left: 10px;
 }
 
 .unpublished ul {

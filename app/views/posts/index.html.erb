@@ -9,11 +9,13 @@
   </div>
 <% end %>
 
-<%= render @newest_post if @newest_post %>
-<%= render partial: "older_post", collection: @older_posts %>
-<%= will_paginate @posts, :previous_label => "< newer", :next_label => "older >", :page_links => false %>
-<% if user_signed_in? %>
-  <div class="admin new_link">
-    <%= link_to 'New Post', new_post_path %>
-  </div>
-<% end %>
+<div>
+  <%= render @newest_post if @newest_post %>
+  <%= render partial: "older_post", collection: @older_posts %>
+  <%= will_paginate @posts, :previous_label => "< newer", :next_label => "older >", :page_links => false %>
+  <% if user_signed_in? %>
+    <div class="admin new_link">
+      <%= link_to 'New Post', new_post_path %>
+    </div>
+  <% end %>
+</div>
