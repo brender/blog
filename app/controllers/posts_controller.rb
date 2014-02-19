@@ -18,6 +18,10 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+
+    if not @post.published
+      authenticate_user!
+    end
   end
 
   def edit
