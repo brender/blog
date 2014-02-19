@@ -50,6 +50,10 @@ class PostsController < ApplicationController
     else
       @newest_post, *@older_posts = @posts
     end
+
+    if user_signed_in?
+      @unpublished_posts = Post.where(published: false)
+    end
   end
 
   private

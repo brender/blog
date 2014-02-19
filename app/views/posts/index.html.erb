@@ -1,3 +1,11 @@
+<% if @unpublished_posts %>
+  <ul>
+  <% @unpublished_posts.each do |post| %>
+    <li><%= link_to post.title, post %></li>
+  <% end %>
+  </ul>
+<% end %>
+
 <%= render @newest_post if @newest_post %>
 <%= render partial: "older_post", collection: @older_posts %>
 <%= will_paginate @posts, :previous_label => "< newer", :next_label => "older >", :page_links => false %>
