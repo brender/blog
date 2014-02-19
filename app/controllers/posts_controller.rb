@@ -43,7 +43,7 @@ class PostsController < ApplicationController
 
   def index
     page_num = params[:page]
-    @posts = Post.order(created_at: :desc).page(page_num)
+    @posts = Post.where(published: true).order(created_at: :desc).page(page_num)
 
     if page_num.to_i > 1
       @older_posts = @posts
