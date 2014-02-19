@@ -1,7 +1,7 @@
 <% if @unpublished_posts %>
   <ul>
   <% @unpublished_posts.each do |post| %>
-    <li><%= link_to post.title, post %></li>
+    <li><%= link_to post.title, edit_post_path(post) %></li>
   <% end %>
   </ul>
 <% end %>
