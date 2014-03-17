@@ -9,6 +9,10 @@ class PostsController < ApplicationController
   def create
   	@post = Post.new(post_params)
 
+    if @post.published
+      @post.published_at = Time.now
+    end
+
   	if @post.save
       redirect_to @post
     else
@@ -31,7 +35,14 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
 
+    was_published = @post.published
+
     if @post.update(params[:post].permit(:title, :text, :published, :thumbnail))
+      if not was_published and @post.published
+        @post.published_at = Time.now
+        @post.save
+      end
+
       redirect_to @post
     else
       render 'edit'
