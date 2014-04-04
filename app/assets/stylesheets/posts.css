@@ -66,6 +66,7 @@ They will automatically be included in application.css.
 .post_title a {
 	text-decoration: none;
 	color: rgb(38,38,38);
+	text-transform: uppercase;
 }
 
 .post_title a:hover {
@@ -74,12 +75,12 @@ They will automatically be included in application.css.
 }
 
 .new .post_title {
-	font-size: 2.5em;
+	font-size: 1.75em;
 	margin-top: 15px;
 }
 
 .old .post_title {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 .content img {
