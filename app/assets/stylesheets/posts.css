@@ -61,6 +61,7 @@ They will automatically be included in application.css.
 	font-weight: 300;
 	margin-bottom: 3px;
 	margin-top: 20px;
+	text-transform: uppercase;
 }
 
 .post_title a {
