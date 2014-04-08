@@ -5,5 +5,5 @@ class Post < ActiveRecord::Base
   has_attached_file :thumbnail, :styles => { 
     :thumb => "200x200#"
   }
-  self.per_page = 6
+  self.per_page = 10
 end
