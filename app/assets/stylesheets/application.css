@@ -22,11 +22,11 @@ body {
 
 .body {
 	margin: 0 auto;
-	width: 840px;
+	width: 990px;
 }
 
 .main {
-	width: 570px;
+	width: 670px;
 	display: inline-block;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .sidebar {
-	width: 250px;
+	width: 300px;
 	margin-right: 10px;
 	border: 2px solid rgb(38,38,38);
 	display: inline-block;
@@ -48,7 +48,7 @@ body {
 }
 
 .sidebar_image {
-	width: 230px;
+	width: 280px;
 	height: auto;
 	margin: 10px;
 }
@@ -68,7 +68,7 @@ body {
 .sidebar_arrow {
 	position: absolute;
 	right: 20px;
-	top: 185px;
+	top: 235px;
 }
 
 .about {
@@ -77,7 +77,7 @@ body {
 	font-size: 2.6em;
 	text-align: left;
 	line-height: 0.75em;
-	margin-left: 30px;
+	margin-left: 80px;
 	display: block;
 	padding-left: 10px;
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .social_links span {
-	width: 230px;
+	width: 280px;
 	height: 40px;
 	background-color: rgb(248,217,201);
 	display: block;
@@ -127,7 +127,7 @@ a:hover {
 
 header {
 	text-align: center;
-	width: 570px;
+	width: 670px;
 	margin-top: 20px;
 }
 
