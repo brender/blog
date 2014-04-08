@@ -22,11 +22,11 @@ body {
 
 .body {
 	margin: 0 auto;
-	width: 1038px;
+	width: 840px;
 }
 
 .main {
-	width: 768px;
+	width: 570px;
 	display: inline-block;
 }
 
@@ -127,7 +127,7 @@ a:hover {
 
 header {
 	text-align: center;
-	width: 768px;
+	width: 570px;
 	margin-top: 20px;
 }
 
