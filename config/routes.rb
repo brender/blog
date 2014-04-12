@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  resources :subscribers
+
   get "about" => 'pages#about'
 
   devise_for :users
