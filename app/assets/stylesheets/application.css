@@ -12,6 +12,7 @@
  *= require posts
  *= require comments
  *= require pages
+ *= require subscribers
  */
 
 @import url(http://fonts.googleapis.com/css?family=Sanchez|League+Script|Raleway:300);
@@ -45,6 +46,7 @@ body {
 	text-align: center;
 	position: relative;
 	margin-bottom: 20px;
+	clear: both;
 }
 
 .sidebar_image {

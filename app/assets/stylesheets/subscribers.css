@@ -1,0 +1,30 @@
+.subscribe {
+}
+
+.subscriber_email {
+	border: 1px solid rgb(248,217,201);
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	color: rgb(100,100,100);
+	margin-top: 0;
+	margin-bottom: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 276px;
+}
+
+.submit_email {
+	border: 0;
+	padding: 10px;
+	background-color: rgb(38,38,38);
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1em;
+	float: right;
+}
+
+.submit_email:hover {
+	background-color: rgba(38,38,38,0.6);
+}
