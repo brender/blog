@@ -12,5 +12,5 @@ Features include:
  * Image storage in Amazon S3
  * Automatic pagination
 
-Copyright 2014 Brenda McIntosh<br>
+_Copyright © 2014 Brenda McIntosh_<br>
 This repository is for portfolio purposes only. The source code is not for distribution or reuse.
