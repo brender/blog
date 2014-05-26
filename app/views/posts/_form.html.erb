@@ -38,13 +38,13 @@
 
 <script type="text/javascript">
 AWS.config.update({
-  accessKeyId: 'AKIAIAR2MAGU2FJGAXGQ',
-  secretAccessKey: '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',
+  accessKeyId: <%= ENV['AWS_ACCESS_KEY_ID'] %>,
+  secretAccessKey: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>,
   region: 'us-east-1'
 });
 
 var bucket = new AWS.S3({
-  params: { Bucket: 'brendamcintoshblog' }
+  params: { Bucket: <%= ENV['S3_BUCKET_NAME'] %> }
 })
 
 var fileChooser = document.getElementById('img-chooser');
