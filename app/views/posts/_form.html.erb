@@ -44,7 +44,7 @@ AWS.config.update({
 });
 
 var bucket = new AWS.S3({
-  params: { Bucket: <%= ENV['S3_BUCKET_NAME'] %> }
+  params: { Bucket: "<%= ENV['S3_BUCKET_NAME'] %>" }
 })
 
 var fileChooser = document.getElementById('img-chooser');
